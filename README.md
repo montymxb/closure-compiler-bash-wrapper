@@ -16,16 +16,14 @@ Place the <strong>closure-compiler.sh</strong> file from this example in the <st
 </li>
 <li>
 Set up a bash alias to <strong>closure-compiler.sh</strong> in your <strong>~/.bash_profile</strong>. It would look a little something like this<br/>
-```
-alias closure-compiler='/closure-compiler/closure-compiler.sh'
-
-```
+<strong>alias closure-compiler='/closure-compiler/closure-compiler.sh'</strong>
 </li>
 <li>
-Update the ```CC_PATH``` variable at the top of closure-compiler.sh if you used a directory other than <strong>/closure-compiler</strong>
+Update the 
+<strong>CC_PATH</strong> variable at the top of closure-compiler.sh if you used a directory other than <strong>/closure-compiler</strong>
 </li>
 <li>
-You can invoke the closure-compiler wrapper via $<strong>closure-compiler [args]</strong>
+You can invoke the closure-compiler wrapper from the terminal via <strong>closure-compiler [args]</strong>
 </li>
 </ol>
 
@@ -36,7 +34,9 @@ You can invoke the wrapper in a number of ways:
 ```
 
 # single file
+
 closure-compiler file.js 
+
 #creates file-min.js
 
 ```
@@ -44,7 +44,9 @@ closure-compiler file.js
 ```
 
 # multiple files
+
 closure-compiler file1.js file2.js file3.js 
+
 #creates file1-min.js file2-min.js file3-min.js
 
 ```
@@ -52,7 +54,9 @@ closure-compiler file1.js file2.js file3.js
 ```
 
 # wildcard, compiles all files ending in .js in the current folder
+
 closure-compiler *.js
+
 # creates [ORIGINAL_NAME]-min.js
 
 ```
@@ -60,7 +64,9 @@ closure-compiler *.js
 ```
 
 # wildcard in a folder
+
 closure-compiler js-files/*.js
+
 # creates js-files/[ORIGINAL_NAME]-min.js
 
 ```
@@ -71,4 +77,4 @@ This is a brief usage coverage, feel free to add parameters to multiple folders 
 <a href="LICENSE">MIT License</a>
 
 # Contact
-If you have any issues you can reach me at @montymxb and I"ll be sure to get back to you.<br/><br/>In most cases feel free to hack away at this little script to make it suite your needs!
+If you have any problems open up an issue or reach me at <ben@axolsoft.com>.<br/><br/>In most cases feel free to hack away at this little script to make it suite your needs!
