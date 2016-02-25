@@ -15,6 +15,9 @@ Unzip and move the contents to <strong>/closure-compiler</strong>
 Place the <strong>closure-compiler.sh</strong> file from this example in the <strong>/closure-compiler</strong> folder as well.
 </li>
 <li>
+Make the closure-compiler.sh file executable with <strong>chmod 755 closure-compiler.sh</strong>
+</li>
+<li>
 Set up a bash alias to <strong>closure-compiler.sh</strong> in your <strong>~/.bash_profile</strong>. It would look a little something like this<br/>
 <strong>alias closure-compiler='/closure-compiler/closure-compiler.sh'</strong>
 </li>
